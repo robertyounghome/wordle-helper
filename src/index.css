@@ -11,3 +11,129 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.c1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.key {
+  width: 50px;
+  height: 50px;
+  background-color: lightgrey;
+  border-radius: 5px;
+  margin-right: 2px;
+  margin-top: 2px;
+
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  margin-right: 6px;
+  margin-top: 6px;
+  padding: 0;
+  border: 1px solid #999;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.color {
+  width: 30px;
+  height: 20px;
+  background-color: white;
+  margin-right: 6px;
+  margin-top: 6px;
+  padding: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.background-white {
+  background-color: white;
+  color: white;
+}
+.background-grey {
+  background-color: #3D4849;
+  color: white;
+}
+.background-green {
+  background-color: #006400;
+  color: white;
+}
+.background-yellow {
+  background-color: #9B870C;
+  color: white;
+}
+
+/* .answer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 15px 10px;
+  background: #fff;
+} */
+
+small {
+  border: 2px solid #777;
+  border-radius: 7px;
+  padding: 5px 12px;
+  color: #777;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paginationItem {
+  background: #fff;
+  border: 2px solid #666;
+  padding: 10px 15px;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  position: relative;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.paginationItem span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.prev,
+.next {
+  background: #fff;
+  border: none;
+  padding: 10px;
+  color: blue;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.paginationItem.active {
+  border: 1px solid #888;
+  color: white;
+  background-color: blue;
+  pointer-events: none;
+}
+
+.paginationItem.disabled,
+.prev.disabled,
+.next.disabled {
+  pointer-events: none;
+  box-shadow: none;
+  color: #999;
+}
