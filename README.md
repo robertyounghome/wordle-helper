@@ -32,7 +32,7 @@ Each is run as follows:
 
 # Installing the Wordle python package
 
-This front end consumes the Python code as stored in my github wordle repository: https://github.com/robertyounghome/wordle 
+This front end consumes the Python code as stored in my github wordle repository: https://github.com/robertyounghome/wordle-python
 
 This can also be downloaded to your environment, or you can install it as a package from TestPyPi as follows:
 
@@ -41,10 +41,9 @@ python3 -m pip install --index-url https://test.pypi.org/simple/ wordle-robertyo
 # The word list
 Yes, a Wordle word search can only be as good as its list. Or in this case, its lists. I tried loading five letter words from my LINUX operating system, but I found this list of words to be very incomplete. I also found a word list that was used at Stanford University (I believe), but I also rejected this word list. Finally, I found two lists that you can find in my api directory:
 
-wordle-allowed-guesses.txt 
-wordle-answers-alphabetical.txt 
+wordle-allowed-guesses.txt and wordle-answers-alphabetical.txt 
 
-It appears that Wordle does indeed use two lists. One list is to validate your word guesses. And the other is a list of the possible answers, in or case here it is ordered alphabetically, because in the original version of this list it is actually ordered in the same order as the Wordle of the day, and who wants to ruin all of our fun?
+It appears that Wordle does indeed use two lists. One list is to validate your word guesses. And the other is a list of the possible answers, or in our case here it is ordered alphabetically, because in the original version of this list it is actually ordered in the same order as the Wordle of the day, and who wants to ruin all of our fun?
 
 # Feel free to contact me with any questions and or comments
 email: robertyounghome@gmail.com
