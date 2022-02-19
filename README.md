@@ -1,5 +1,47 @@
+# Wordle Helper
+
+Enter your Wordle results, word by word, press enter to search.
+Wordle Helper will give you a list of words below that could be your answer.
+See the screen shots for an idea, it looks very similar to the Wordle game.
+
+Upon entering the following for the first word:
+
 ![Screenshot](/img/wordle-shot1.png)
 
+The results are as follows:
+
+![Screenshot](/img/wordle-shot2.png)
+
+Now we enter another word:
+
+![Screenshot](/img/wordle-shot3.png)
+
+The results are further filtered as follows:
+
+![Screenshot](/img/wordle-shot4.png)
+
+# Installing Wordle Helper 
+
+This repository contains two main parts:
+    1) React front end (Installed via npx create-react-app wordle-helper)
+    2) Flask (pip install Flask python-dotenv)
+
+Each is run as follows:
+    1) yarn start
+    2) yarn start-api
+
+# Installing the Wordle python package
+
+This front end consumes the Python code as stored in my github wordle repository. This can also be downloaded to your environment, or you can install it as a package from TestPyPi as follows:
+
+python3 -m pip install --index-url https://test.pypi.org/simple/ wordle-robertyounghome 
+
+# Feel free to contact me with any questions and or comments
+email: robertyounghome@gmail.com
+
+Enjoy.
+
+--------------
 
 
 # Getting Started with Create React App
