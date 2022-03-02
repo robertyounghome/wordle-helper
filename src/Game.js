@@ -74,8 +74,31 @@ class Game extends Component {
             if (text.length === 5) {
                 // validate that we are done and delete 
                 console.log(value.text);
-                fetch('/filter?text='.concat(text,'&mask=',mask)).then(res => res.json()).then(data => {
-                    this.setRemainingWords(Array.from(data));})
+                // fetch('/filter?text='.concat(text,'&mask=',mask,'&words=',JSON.stringify(this.state.remaining_words))).then(res => res.json()).then(data => {
+                //     this.setRemainingWords(Array.from(data));})
+    // Simple POST request with a JSON body using fetch
+//     const requestOptions = {
+//         method: 'POST',
+//         headers: { 'Content-Type': 'application/json' },
+//         body: JSON.stringify({ title: 'React POST Request Example' })
+//     };
+//     fetch('https://reqres.in/api/posts', requestOptions)
+//         .then(response => response.json())
+//         .then(data => this.setState({ postId: data.id }));
+// }
+
+                var json_for_post = {text: text,
+                    mask: mask,
+                    words: this.state.remaining_words.toString()
+                }
+                console.log(json_for_post)
+                fetch('/filter', {
+                    method: "POST",
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(json_for_post)
+                     }).then(res => res.json()).then(data => {
+                        this.setRemainingWords(Array.from(data));})    
+
                 text = "";
                 mask = "";
                 column = 0;
